@@ -10,7 +10,7 @@ func main() {
 		fmt.Fprintf(w, "Hello, Jenkins!")
 	})
 	http.HandleFunc("/service", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hello, Service!")
+		fmt.Fprintf(w, "Hello, Service-demo!")
 	})
 	http.ListenAndServe(":80", nil)
 }
